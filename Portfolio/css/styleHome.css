@@ -44,6 +44,11 @@ color: red;
     .navbar{
          background-color:black   
     }
+    .navbar li{
+        float:left ;
+        list-style: none;
+        margin: 4px 4px;
+        }
 }
 
 
