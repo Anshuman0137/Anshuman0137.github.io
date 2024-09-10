@@ -1,9 +1,14 @@
 body{
     background-color: #081b29;
 }
-
+footer{
+    margin-top: 52vh;
+    text-align: center;
+    font-family: cursive;
+    color: cyan;
+}
 .navbar{
-    background-color: yellowgreen;
+    background-color: cyan;
     border-radius: 30px;
 }
 .navbar ul{
@@ -16,23 +21,23 @@ margin: 14px 20px;
 }
 
 .navbar li a{
+font-family: cursive;    
 padding: 3px 3px;
-/* color: whitesmoke; */
 text-decoration: none;
 }
 
 .navbar li a:hover{
 color: red;
 }
-.contact-me{
-    color: red;
+.about-me{
+    color:red;
 }
 .contact-me, .my-gallery, .home{
-    color:whitesmoke
+    color:black;
 }
 .intro{
     font-size: 20px;
-    color: white;
+    color: cyan;
     margin-top : 200px;
     text-align: center;
 }
