@@ -2,14 +2,29 @@ body{
     background-color: #081b29;
 }
 footer{
-    margin-top: 52vh;
-    text-align: center;
+    margin-top: 3vh;
+    justify-content: center;
     font-family: cursive;
     color: cyan;
+    display: flex;
+    position: relative;
+}
+.container{
+    margin-top: 1vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .navbar{
     background-color: cyan;
     border-radius: 30px;
+    /* margin-top: 0; */
+    width:100%;
+    height: 5.5vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
 }
 .navbar ul{
     overflow: auto;
@@ -17,12 +32,15 @@ footer{
 .navbar li{
 float:right;
 list-style: none;
-margin: 14px 20px;
+margin-left: 14px;
+margin-right: 20px;
+
+font-size: 10%vh;
 }
 
 .navbar li a{
 font-family: cursive;    
-padding: 3px 3px;
+padding: 0px 0px;
 text-decoration: none;
 }
 
@@ -35,39 +53,58 @@ color: red;
 .contact-me, .home, .about-me{
     color:black
 }
-.container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+
 img{
-    width: 500px;
+    width: 20vw;
+    height: 20vw;
     border: 2px solid gray;
     border-radius: 20px;
 }
 video{
-    width: 500px;
-    height: 500px;
+    width: 20vw;
+    height: 20vw;
     border: 2px solid gray;
     border-radius: 20px;
 }
 
-@media (max-width:500px){                /*For small screens apply this styling using media rule*/
-    .container{
-        flex-direction: column;
-    }
-    /* .navbar li {
-        font-size: small;
-        text-align: left;
-    } */
-}
 
 @media (max-width:500px){
-    body{
+    /* body{
         background-color: rgb(131, 46, 46);  
-    }
+    } */
     .navbar{
-         background-color:black   
+         /* background-color:black; */
+         display: flex;
+         flex-wrap: wrap; 
+         justify-content: center;  
+    }
+    .navbar li{
+        float:left ;
+        list-style: none;
+        margin: 4px 4px;
+        font-size: 10%vh;
+    }
+    /* .my-gallery{
+        color: red;
+    }
+    .contact-me, .home, .about-me{
+        color:white;
+    } */
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+   .container img{
+        width: 40vw;
+        height: 40vw;
+        border: 2px solid gray;
+        border-radius: 20px;
+    }
+    .container video{
+        width: 40vw;
+        height: 40vw;
+        border: 2px solid gray;
+        border-radius: 20px;
     }
 }
 

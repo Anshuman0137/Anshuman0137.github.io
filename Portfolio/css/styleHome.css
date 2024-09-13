@@ -1,16 +1,30 @@
-body{
+ body{
     background-color: #081b29;
+
 }
 footer{
-    margin-top: 52vh;
-    text-align: center;
+    margin-top: 28vh;
+    margin-bottom: 3vh;
+    /* text-align: center; */
     font-family: cursive;
-    color: cyan;          
+    color: cyan;    
+    display: flex;
+    justify-content: center;      
 }
-
+img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width : 200px;
+    height: 200px;
+    margin-left: 43vw;
+    border: 2px solid cyan;
+    border-radius: 35%;
+}
 .navbar{
     background-color: cyan;
     border-radius: 30px;
+    margin-left: 0;
 }
 .navbar ul{
     overflow: auto;
@@ -19,6 +33,7 @@ footer{
 float:right;
 list-style: none;
 margin: 14px 20px;
+font-size: 10%vh;
 }
 
 .navbar li a{
@@ -32,29 +47,53 @@ color: red;
 }
 .home{
     color: red;
+    /* background-color: white; */
+    /* border-radius: 10px;  */
 }
 .contact-me, .my-gallery, .about-me{
     color:black
 }
+span{
+    color:white;
+    font-size:20px;
+}
+
 .intro{
     font-size: 20px;
     color: cyan;
-    margin-top : 200px;
+    margin-top : 100px;
     text-align: center;
 }
 
 @media (max-width:500px){
-    body{
+    /* body{
         background-color: rgb(131, 46, 46);  
-    }
+    } */
     .navbar{
-         background-color:black   
-    }
+        /* background-color:black;    */
+        display: flex;
+        flex-wrap: wrap;
+        }
     .navbar li{
         float:left ;
         list-style: none;
         margin: 4px 4px;
+        /* font-size: 10%vh; */
         }
+        /* .home{
+            color: red;
+        }
+        .contact-me, .my-gallery, .about-me{
+            color:white;
+        } */
+       .intro{
+        font-size: small;
+       }  
+       img{
+        width: 98px;
+        height: 90px;
+       }
+
 }
 
 
@@ -122,7 +161,7 @@ color: red;
         opacity: 0;
     }
     50%{
-        opacity: 0.15;
+        opacity: 0.50;
     }
     100%{
         opacity:0;
